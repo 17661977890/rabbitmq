@@ -16,6 +16,8 @@ https://blog.csdn.net/cairuojin/article/details/81912033 ---windows
 Fanout（不处理路由键），队列绑定到交换机，直接转发到所有队列。 
 Direct（处理路由键） ：声明交换机为direct，根据绑定的路由key，消息带哪个key，就路由到哪个队列。可以一个队列绑定多个key
 Topic（）声明交换机为topic 可以实现模式匹配 #匹配一个或多个 *匹配一个
-
+![image](https://images.gitbook.cn/05c27fa0-b1e5-11e8-a732-016f6432627f)
+![image](https://images.gitbook.cn/05c27fa0-b1e5-11e8-a732-016f6432627f)
+![image](https://images.gitbook.cn/6dc16c60-b1e5-11e8-aaa3-f7a30ea6c343)
 
 4、路由模式（上述）
