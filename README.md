@@ -6,12 +6,15 @@ springboot 集成rabbitmq
 https://www.cnblogs.com/vipstone/p/9950434.html   ---docker安装（路由模式）
 https://blog.csdn.net/cairuojin/article/details/81912033 ---windows
 1.简单队列（此时为匿名发送，不指定交换机，则直接发送到队列中）
+
 ![image](https://img-blog.csdn.net/20180821174927389?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NhaXJ1b2ppbg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 2.工作队列WorkQueue  模型（消息轮流被多个消费者消费） 
+
 ![image](https://img-blog.csdn.net/20180821175206789?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NhaXJ1b2ppbg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 3.订阅者模式 
+
 ![image](https://img-blog.csdn.net/2018082121411870?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NhaXJ1b2ppbg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 （一个生产者，多个消费者，消费者都有自己的队列，消息先发送到交换机exchange，每个队列都绑定到交换机。实现一个消息被多个消费者消费。 ）
